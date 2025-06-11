@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mas campos</title>
+</head>
+<body>
+    <header>
+        <h1>Mas campos de form</h1>
+    </header>
+    <aside>
+        <form action="">
+            <label for="busqueda">Busca:</label>
+            <input type="search" name="busqueda" id="busqueda">
+            <br>
+            <label for="telefono">Ingrese su telefono</label>
+            <input type="tel" name="telefono" id="telefono" pattern="^\+?\d{1,4}?[\s\-]?\(?\d{1,3}?\)?[\s\-]?\d{3}[\s\-]?\d{3,4}$" required>
+            <br>
+            <label for="hora">Ingrese la hora:</label>
+            <input type="time" name="hora" id="hora">
+            <br>
+            <label for="url">Ingrese su url</label>
+            <input type="url" name="url" id="url">
+            <br>
+            <label for="progreso">Su progresso:</label>
+            <progress name="progreso" id="progreso" value="50" max="100"></progress>
+            <br>
+            <label for="list">Lista de articulos:</label>
+            <datalist id="list">
+                <option value="Casa con pileta">Casa con pileta</option>
+                <option value="Casa quinta">Casa quinta</option>
+                <option value="Rancho de cletus">Rancho de cletus</option>
+                <option value="Mansion Sr. Burns">Mansion Sr. Burns</option>
+            </datalist>
+            <input type="text" name="articulo" id="articulo" list="list">
+            <br>
+            <input type="submit" value="Enviar">
+            <br>
+            <input type="reset" value="Borrar">
+            
+        </form>
+    </aside>
+</body>
+</html>
