@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Padauk:regular,700);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Padauk', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 2.5em;
+    color: #000;
+    margin: 0.5em 2em 0 0;
+}
+
+.apis{
+    margin: 2em;
+}
+
+.apis ul{
+    list-style: none;
+    padding: 0px;
+    max-width: 20%;
+}
+.apis li{
+    margin: 0.1em 0;
+    padding: 0.2em ;
+    background-color: #4eb5e5;
+    text-align: center;
+    cursor: pointer;
+}
+
+.apis li:hover{
+    background-color: #4394ba;
+    transition: 0.3s;
+}
+
+.apis li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
