@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    margin: 0.5em 0 2em 0;
+}
+
+.box{
+    margin: 5em auto;
+    border: 1px solid #b31dd8;
+    width: 20%;
+    padding: 1em;
+    background-color: #9a48c9;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: #880b93;
+    transition: 0.3s;
+}
+
+.box a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
