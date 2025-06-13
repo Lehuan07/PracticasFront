@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+.primera__parte{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.25em;
+}
+
+.fa-language{
+    font-size: 3.2em;
+    color: #1a73e8;
+}
+
+.subtitulo__traductor{
+    font-size: 2.5em;
+    color:#1a73e8;
+    font-weight: 600;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.busqueda{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+}
+.input__palabra {
+    display: flex;
+    align-items: center;
+    background-color: #f1f3f4;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    width: 60%;
+    margin: 0 1.25em 0 0.625em;
+    padding: 10px;
+    height: 2.8em;
+}
+
+.input__palabra input{
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.input__palabra input::placeholder{
+    font-weight: 900;
+    color: #000;
+}
+
+
+.input__palabra button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    transition: 0.3s all ease-in-out;
+}
+
+.input__palabra button:hover{
+    color: #0e53ae;
+}
+
+.inputs select{
+    border: none;
+    outline: none;
+    background-color: #f1f3f4;
+    padding: 0.625em;
+    border-radius: 0.625em;
+    width: 38%;
+    margin-right: 0.625em;
+    font-weight: 700;
+    color: #2c2c2c;
+    height: 3.5em;
+}
+
+.titulo__principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.titulo{
+    font-size: 3em;
+    margin: 30px 0 0 10px;
+    font-weight: 800;
+}
+
+.titulo__principal button{
+    margin: 1.875em 0.625em 0 0px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    width: 5em;
+    height: 5em;
+    background: #47a8ed;
+    transition: all 0.3s ease-in-out;
+}
+
+.titulo__principal button:hover{
+    background: #0e53ae;
+}
+
+.fa-play{
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.linea__texto{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.linea__texto::before,
+.linea__texto::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 2.5em 0.625em;
+}
+
+.linea__texto span{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+li {
+    margin: 2em 3em;
+    text-align: justify;
+    color: #1a73e8;
+}
+.titulo__li{
+    color: #1a73e8;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.parrafo{
+    color: #000;
+    text-align: justify;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+.sinonimos{
+    color: #AEA19C;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 1em 1em 1.5em;
+}
+
+.sinonimos__ejemplos{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #1a73e8;
+}
+
+.linea__divisoria{
+    display: flex;
+    align-items: center;
+}
+
+.linea__divisoria::after, 
+.linea__divisoria::before{
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 2.5em 0.625em;
+}
+
+.parrafo__footer{
+    color: #AEA19C;
+    font-size: 1.3em;
+    margin: 0 1em 1em 1.5em;
+}
+
+
+

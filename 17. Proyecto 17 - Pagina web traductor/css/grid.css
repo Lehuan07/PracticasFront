@@ -1,0 +1,20 @@
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+
+.grid__header{
+    grid-area: header;
+}
+
+.grid__section{
+    grid-area: main;
+}
+
+.grid__footer{
+    grid-area: footer;
+}
