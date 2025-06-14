@@ -1,0 +1,37 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0; 
+    padding: 0; 
+
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    color: #000;
+    background-color: #e9ecf4;
+}
+
+.titulo{
+    font-size: 4rem;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.subtitulo{
+    font-size: 3rem;
+    color: #000;
+    margin: 10px;
+}
+
+.subtitulo3{
+    font-size: 2rem;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.parrafo{
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
