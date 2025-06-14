@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+}
+
+:root{
+    --color-fondo: #2A4D65;
+    --color-titulos: #BFCAD0;
+    --color-items: #1A5CAC;
+    --color-items-dark: #18171F;
+}
+
+
+.titulo{
+    font-size: 3em;
+    text-align: center;
+    color: var(--color-titulos);
+    margin: 1em 0 2em 0;
+    height: 1em;
+    width: 100%;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.class__main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+}
+
+.main__title{
+    color: var(--color-titulos);
+    font-size: 2em;
+    margin-bottom: 2rem;
+}
+
+.main__gurupo__input_button{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    width: 30%;
+    justify-content: center;
+}
+
+.main__input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 20em;
+    height: 3em;
+    border: none;
+    outline: none;
+    padding-left: 1em;
+    font-size: 2em;
+    background: #ffffff;
+    padding-top: 1em;
+}
+
+.main__gurupo__input_button button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 4em;
+    background-color: #fff;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    padding: 0 2em;
+}
+
+.fa-copy{
+    color: var(--color-items);
+    font-size: 1.6em;
+}
+
+.box__main{
+    background-color: #fff;
+    margin-top: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    width: 45.3em;
+    height: 42em;
+    padding: 1em;
+}
+
+.main__longitud{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 3em;
+    min-height: auto;
+    align-items: center;
+    padding: 0.5em 0;
+}
+
+.main__longitud label{
+    font-size: 1.6em;
+    color: #3D4348;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.main__longitud span{
+    font-size: 2.5em;
+    color: var(--color-items);
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.main__imputs{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin-top: 0.5em;
+    height: 20.2em;
+}
+input[type="range"] {
+    -webkit-appearance: none; /* Quitar estilo nativo */
+    width: 100%;
+    height: 8px;
+    background: #121117; /* Fondo de la barra */
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: black;
+    border-radius: 50%;
+    border: none;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: sans-serif;
+    margin-bottom: 0.625em;
+    margin: 2em 2em 0 0;
+    font-size: 1.4em;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none; /* Oculta el checkbox original */
+}
+
+.checkmark {
+    height: 19px;
+    width: 19px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    margin-right: 0.625em;
+    position: relative;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+    content: "✓";
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 1px;
+    top: -5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main__input__black{
+    width: 100%;
+    background-color: #000;
+    height: 5em;
+    border: none;
+    outline: none;
+    padding-left: 1em;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.main__input__black::placeholder{
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: 1;
+}
+
+
+.main__crear{
+    width: 100%;
+    height: 2.5em;
+    color: #fff;
+    background-color: var(--color-items);
+    font-size: 2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+}
+
+.main__crear:hover{
+    background-color: #0766da;
+
+}
+
+@media screen and (max-width: 464px){
+    .titulo{
+        font-size: 2em;
+        margin: 0.5em;
+    }
+    
+    .main__title{
+        font-size: 1.7em;
+    }
+
+    .main__gurupo__input_button {
+        width: 70%;
+    }
+
+    .box__main{
+        width: 70%;
+        margin: 1em auto;
+        height: 54.4em;
+    }
+
+    .main__input{
+        width: 90%;
+        font-size: 1.2em;
+    }
+
+    .fa-copy{
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+}
