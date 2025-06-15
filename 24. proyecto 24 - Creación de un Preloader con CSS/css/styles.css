@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.titulo{
+    font-size: 2.4rem;
+    color: #01334b;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer-text{
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.preloader{
+    margin: 100px auto;
+    border: 16px solid #000;
+    border-top: 16px solid #c62828; /* Rojo solo en top */
+    border-radius: 50% ;
+    width: 100px;
+    height: 100px;
+    animation: girar 2s ease infinite;
+}
+
+@keyframes girar {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
