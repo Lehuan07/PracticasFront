@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: #F9EBD7;
+}
+
+.titulo{
+    font-size: 3em;
+    margin: 1em 0 2em 1em;
+}
+
+.lista__desordenada li a{
+    margin: 1em 0 2em 5em;
+    font-size: 1.9em;
+    text-decoration: none;
+    color: #0b0b0b;
+}
+
+.submenu{
+    margin-left: 3em;
+    color: #ED111A;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    
+}
+
+
+.submenu li a{
+    color: #ED111A;
+    cursor: pointer;
+    padding: 0.3em 1em;
+    
+}
+
+.submenu li a:hover{
+    color: #b44c43;
+    text-decoration: underline;
+}
