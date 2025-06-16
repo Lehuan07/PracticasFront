@@ -1,0 +1,17 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main";
+}
+
+.grid-header{
+    grid-area: header;
+    width: 100%;
+}
+
+.grid-section{
+    grid-area: main;
+    width: 100%;
+}
