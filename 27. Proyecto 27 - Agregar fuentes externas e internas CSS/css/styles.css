@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'open sans';
+    src: url(/fuentes/opensans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+h3{
+    font-family: 'open sans', sans-serif;
+}
