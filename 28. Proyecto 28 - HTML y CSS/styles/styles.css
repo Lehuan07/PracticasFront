@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url("https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.cabecera{
+    padding: 10px;
+    background-color: #02008D;
+    height: 95px;
+    width: 100%;
+    margin: 10px;
+    border: 1px solid #000;
+}
+
+.titulo{
+    color: #fff;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.navegacion{
+    background-color: #FF6248;
+    height: 50px;
+    width: 100%;
+    margin: 25px 10px;
+    border: 2px solid #4F6D66;
+}
+
+.subtitulo{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+}
