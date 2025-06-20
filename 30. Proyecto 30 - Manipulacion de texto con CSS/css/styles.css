@@ -47,3 +47,11 @@ html{
     text-transform: uppercase;
     text-indent: 1rem;
 }
+
+@media screen and (max-width: 720px) {
+    .cabecera__titulo{
+    width: 100%;
+    letter-spacing: 1rem;
+    line-height: 4rem;
+    }
+}
