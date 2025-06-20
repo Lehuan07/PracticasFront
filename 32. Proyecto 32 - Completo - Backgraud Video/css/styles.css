@@ -37,7 +37,7 @@ html{
     color: #fff;
     text-shadow: 0 0 5px #fafafa;
     margin: 2rem;
-
+    user-select: none;
 }
 
 .container__boton{
