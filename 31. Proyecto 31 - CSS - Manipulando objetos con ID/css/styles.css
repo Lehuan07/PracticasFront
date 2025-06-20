@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+}
+
+#miDiv,#miDiv2{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+
+#miDiv{
+    background-color: #0084FF;
+    color: white;
+}
+
+#miDiv2{
+    background-color: #FEE3C5;
+    color: rgb(10, 9, 9);
+
+}
