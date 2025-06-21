@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-fondo: #B0B3D9;
+    --color-reloj: #151932;
+    --color-objetos: #99F870;
+    --color-texto: #D6DFFE;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-fondo);
+    font-size: 62.5%;
+}
+
+.layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.layout__backgroud{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-reloj);
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+}
+
+.layout__corredor{
+    border-top: 0.5rem solid var(--color-objetos);
+    border-left: 0.5rem solid var(--color-reloj);
+    border-right: 0.5rem solid var(--color-objetos);
+    border-bottom: 0.5rem solid var(--color-objetos);
+    border-radius: 50%;
+    height: 25rem;
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.layout__timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.timer{
+    font-size: 5rem;
+    color: var(--color-texto);
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.layout__button{
+    margin: 0 1em;
+    padding: 0.5rem;
+    width: 4.6rem;
+    height: 2rem;
+    background-color: var(--color-objetos);
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.layout__button.iniciar:hover,
+.layout__button.reiniciar:hover{
+    background-color: var(--color-fondo);
+}
+
+.layout__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 30%;
+    background-color: var(--color-reloj);
+    height: 4rem;
+    border-radius: 3rem;
+    margin-top: 2rem;
+}
+
+.menu__buttons{
+    margin: 0 0.5em;
+    height: 3rem;
+    width: 7rem;
+    border-radius: 3rem;
+    background-color: var(--color-reloj);
+    border: none;
+    outline: none;
+    color: var(--color-texto);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.menu__buttons.cronometro{
+    background-color: var(--color-objetos);
+    color: #000;
+}
+
+@media screen and (max-width: 768px){
+    .layout__menu{
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .layout__backgroud{
+        height: 20rem;
+        width: 20rem;
+    }
+    .layout__corredor{
+        height: 17rem;
+        width: 17rem;
+    }
+
+    .timer{
+        font-size: 4rem;
+    }
+
+    .layout__button{
+        width: 4rem;
+        height: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    .layout__backgroud{
+        height: 15rem;
+        width: 15rem;
+    }
+    .layout__corredor{
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .timer{
+        font-size: 3rem;
+        padding: 0;
+    }
+
+
+    .layout__button{
+        width: 3.5rem;
+        height: 1.5rem;
+    }
+
+    .layout__menu{
+        width: 100%;
+    }
+    
+}
