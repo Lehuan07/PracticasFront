@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+html{
+    font-size: 1.6rem;
+    font-family: "Montserrat", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+:root{
+    --color-fondo: #F8ECEC;
+    --color-fuente: #456B80;
+    --color-usuario: #454248;
+    --color-boton: #00A7DC;
+    --color-tarjeta: #fff
+}
+
+.article{
+    background-color: var(--color-fondo);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article__main{
+    width: 26rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.section__imagen{
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+    padding: 0;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.section__card{
+    width: calc(26rem - 10rem);
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-tarjeta);
+    border-radius: 0 0.5rem 0.5rem 0rem;
+}
+
+.card__head{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.head__title{
+    font-size: 0.7rem;
+    color: var(--color-fuente);
+    margin-bottom: 1rem;
+}
+
+.head__description{
+    font-size: 0.5rem;
+    color: var(--color-fuente);
+    font-weight: 300;
+}
+
+.section__photo-user{
+    width: 1rem;
+    height: 1rem;
+}
