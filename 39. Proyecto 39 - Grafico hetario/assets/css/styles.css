@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-fondo: #F7E9DC;
+    --color-barras: #5DD8EC;
+    --color-barra-activa: #596DC2;
+    --color-letras-blancas: #FFFFFF;
+    --color-letras-negras: #000;
+    --color-fondo-seccion: #fff;
+}
+
+body{
+    font-size: 10px;
+    font-family: 'Montserrat', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.layout__header{
+    width: 28rem;
+    height: 7rem;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--color-barras);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+
+.header__parrafo{
+    color: var(--color-letras-blancas);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.header__title{
+    color: var(--color-letras-blancas);
+}
+
+.layout__section{
+    height: 22rem;
+    width: 28rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--color-fondo-seccion);
+    overflow: none;
+}
+
+
+.section__article{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.article__subtitle{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.article__content{
+    width: 100%;
+    height: calc(25rem - 15rem - 2rem);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.content__bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: end; 
+}
+
+.bar{
+    width: 5rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-barras);
+    margin: 0.2rem;
+}
+
+.bar:nth-child(1){
+    height: 5rem;
+}
+
+.content__description{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
