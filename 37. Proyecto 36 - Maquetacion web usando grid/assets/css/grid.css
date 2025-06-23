@@ -1,0 +1,31 @@
+.layout{
+    display: grid;
+
+    grid-template-areas: 
+    "head head head",
+    "nav nav aside",
+    "article article aside",
+    "article article aside",
+    "article article aside",
+    "footer footer footer";
+}
+
+.layout__header{
+    grid-area: head;
+}
+
+.layout__nav{
+    grid-area: nav;
+}
+
+.layout__aside{
+    grid-area: aside;
+}
+
+.layout__article {
+    grid-area: article;
+}
+
+.layout__footer {
+    grid-area: footer;
+}
