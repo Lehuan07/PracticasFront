@@ -40,10 +40,11 @@ html{
 }
 
 .section__imagen{
-    width: 10rem;
-    height: 10rem;
+    max-width: 10rem;
+    height: auto;
     margin: 0;
     padding: 0;
+    object-fit: cover;
     border-radius: 0.5rem 0 0 0.5rem;
 }
 
