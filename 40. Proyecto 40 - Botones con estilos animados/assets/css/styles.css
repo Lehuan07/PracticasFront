@@ -10,25 +10,92 @@ html{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+body{
+    font-size: 1.6rem;
+}
+
 .layout{
     width: 100%;
-    height: 100vh;
-    
+    min-height: 100vh;
+    position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.layout__btn{
-    margin: 2rem;
-    height: 7rem;
-    width: 18rem;
-    border: none;
-    outline: none;
-    font-size: 1.6rem;
+.layout__button{
+    width: 50rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
 }
 
-.btn__telon{
+.button__1,
+.button__2{
+    position: relative;
+    width: 22rem;
+    height: 7rem;
+    border-radius: 0.5rem;
+    border: 3px solid #6CBFFC;
+    cursor: pointer;
+
+    font-weight: 600;
+    color: #6CBFFC;
     background-color: #fff;
+    outline: none;
+}
+.button__1{
+    overflow: hidden;
+}
+
+/*Efecto btn 1:*/
+.button__1::before{
+    content: "Mirar ahora!";
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #6CBFFC;
+    color: #fff;
+    font-weight: 600;
+    transform: translateY(7rem);
+    transition: .3s all linear;
+}
+
+.button__1:hover::before{
+    transform: translateY(0);
+}
+
+.button__2{
+    background-color: #6CBFFC;
+    color: #fff;
+    border-radius: 10rem;
+    border: none;
+
+}
+
+/*Efecto btn2*/
+
+.button__2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6CBFFC;
+    border-radius: 10rem;
+    transition: all 1s linear;
+    z-index: -1;
+    
+}
+
+.button__2:hover::before{
+    transform: scaleX(1.3) scaleY(1.5);
+    opacity: 0;
 }
