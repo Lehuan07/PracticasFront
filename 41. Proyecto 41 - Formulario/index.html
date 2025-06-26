@@ -20,24 +20,40 @@
             <aside class="layout__aside">
                 <ol class="aside__list">
                     <li>
+                        <div class="div__li">
                         <span class="list__numeros">1</span>
+                        <div class="textos__li">
                         <p class="list__pasos">Paso 1</p>
                         <h4 class="list__description">Crea tu cuenta</h4>
+                    </div>
+                    </div>
                     </li>
                     <li>
+                        <div class="div__li">
                         <span class="list__numeros">2</span>
+                        <div class="textos__li">
                         <p class="list__pasos">Paso 2</p>
                         <h4 class="list__description">Direccion</h4>
+                        </div>
+                    </div>
                     </li>
                     <li>
+                        <div class="div__li">
                         <span class="list__numeros">3</span>
+                        <div class="textos__li">
                         <p class="list__pasos">Paso 3</p>
                         <h4 class="list__description">Formas de pago</h4>
+                        </div>
+                    </div>
                     </li>
                     <li>
+                        <div class="div__li">
                         <span class="list__numeros">4</span>
+                        <div class="textos__li">
                         <p class="list__pasos">Paso 4</p>
                         <h4 class="list__description">Confirmacion</h4>
+                    </div>
+                    </div>
                     </li>
                 </ol>
             </aside>
@@ -46,18 +62,25 @@
             <article class="layout__article">
                 <header class="article__header">
                     <h1 class="header__title">Registro</h1>
-                    <p class="header__description">Crea tu cuenta para confirmar la compra</p>
+                    <p class="header__description">Crea tu cuenta para poder seguir con la compra</p>
                 </header>
 
                 <form action="" class="article__form">
-                    <label for="input__nombre" class="form__nombre">Nombre</label>
-                    <input type="text" id="input__nombre" class="input__nombre" placeholder="Ingrese su nombre" required>
-                    <label for="input__apellido" class="form__apellido">Apellido</label>
-                    <input type="text" name="input__apellido" id="input__apellido" class="input__apellido" placeholder="Ingrese su Apellido" required>
-                    <label for="input__nacimiento" class="form__nacimiento">Ingrese su fecha de nacimiento</label>
-                    <input type="date" name="input__nacimiento" id="input__nacimiento" class="input__nacimiento" required>
-                    <label for="input__contrasenia" class="form__contrasenia">Ingrese su contraseña</label>
-                    <input type="password" name="" id="input__contrasenia" class="input__contrasenia">
+                    <label for="input__nombre" class="form__label">Nombre</label>
+                    <input type="text" id="input__nombre" class="form__input" placeholder="Ingrese su nombre" required aria-label="Ingrese su nombre">
+
+                    <label for="input__apellido" class="form__label">Apellido</label>
+                    <input type="text" name="input__apellido" id="input__apellido" class="form__input" placeholder="Ingrese su Apellido" required>
+
+                    <label for="input__email" class="form__label">Ingrese su e-mail</label>
+                    <input type="email" name="input__email" id="input__email" class="form__input" placeholder="Ingrese su e-mail" required>
+
+                    <label for="input__nacimiento" class="form__label">Ingrese su fecha de nacimiento</label>
+                    <input type="date" name="input__nacimiento" id="input__nacimiento" class="form__input" required>
+
+                    <label for="input__contrasenia" class="form__label">Ingrese su contraseña</label>
+                    <input type="password" name="" id="input__contrasenia" class="form__input" placeholder="Introduzca su contraseña">
+
                     <button type="submit" class="form__btn">Siguiente</button>
                 </form>
             </article>
