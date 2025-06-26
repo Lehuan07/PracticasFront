@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ababab;
+}
+
+.layout{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    padding: 3rem;
+}
+
+.layout__article{
+    position: relative;
+    height: 40rem;
+    width: 40rem;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.article__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    display: block;
+}
+
+.article__overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #4A53BA;
+    padding: 3rem;
+    margin-top: 0;
+    color: #fff;
+    transition: all .3s linear;
+    transform: translateX(-40rem);
+    opacity: 0.8;
+}
+
+.layout__article:hover > .article__overlay{
+    transform: translateX(0);
+}
+
+.article__title{
+    margin-bottom: 4rem;
+}
+
+.article__description{
+    font-weight: 500;
+}
+.article__img{
+    transform: translateY(0);
+    transition: .3s all linear;
+}
+
+.layout__article--2 > .article__overlay{
+    background-color: #EE5051;
+    height: 50%;
+    position: relative;
+    transform: translateY(40rem);
+    opacity: 1;
+    bottom: 0;
+}
+
+.layout__article--2:hover > .article__overlay{
+    transform: translateY(20rem);
+}
+.layout__article--2:hover > .article__img{
+    transform: translateY(-20rem);
+}
+
+.layout__article--3 > .article__overlay{
+    background-color: #18A3A6;
+    position: relative;
+    transform: translateY(40rem);
+    opacity: 1;
+}
+
+.layout__article--3:hover > .article__overlay{
+    transform: translateY(0rem);
+}
