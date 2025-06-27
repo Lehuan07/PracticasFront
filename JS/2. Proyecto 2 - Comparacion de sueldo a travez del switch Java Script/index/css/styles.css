@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url(/index/img/torange_biz.jpg);
+    font-size: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #fbfbfba1, #04662aaa);
+
+}
+
+.titulo{
+    font-size: 4rem;
+    margin: 2rem;
+    color: #0e6010;
+    text-decoration: underline;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.parrafo{
+    font-size: 3rem;
+    margin: 2rem;
+    color: #045e06;
+}
+
+.sueldo{
+    width: 20%;
+    height: 5rem;
+    font-size: 2rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+.btn{
+    width: 20%;
+    height: 5rem;
+    font-size: 2rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+@media screen and (max-width: 934px) {
+    html{
+        font-size: 9px;
+    }
+    
+}
+
+@media screen and (max-width: 838px) {
+    html{
+        font-size: 8px;
+    }
+    
+}
+
+@media screen and (max-width: 747px) {
+    .sueldo{
+        width: 30%;
+    }
+    .btn{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 487px) {
+    html{
+        font-size: 7px;
+    }
+    .sueldo{
+        width: 40%;
+    }
+    .btn{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 328px) {
+    
+
+    .sueldo{
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+    }
+}
