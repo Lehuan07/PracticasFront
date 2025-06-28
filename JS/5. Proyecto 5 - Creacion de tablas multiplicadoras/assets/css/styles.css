@@ -1,0 +1,36 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.tables{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.tables__item{
+    display: flex;
+    flex-direction: column;
+    width: calc(20% - 8px);
+    background-color: #4747EA;
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+.tables__title{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.table__list{
+    list-style: none;
+    padding: 0;
+
+}
+
+.list__item{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
