@@ -20,6 +20,6 @@ let cabiarEstilos = document.querySelectorAll(".card__btn-change");
 cabiarEstilos.forEach(cambiar =>{
 
     cambiar.addEventListener("click", () =>{
-        cambiar.parentElement.parentElement.classList.toggle("carta--oscura");
+        cambiar.parentElement.classList.toggle("carta--oscura");
     });
 });
