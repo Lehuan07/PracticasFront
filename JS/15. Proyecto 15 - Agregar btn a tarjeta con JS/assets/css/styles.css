@@ -95,6 +95,16 @@ body{
 }
 
 
-.cambiar--estilos {
+.layout__card.estilo-activo {
     box-shadow: 0 0 10px #c70cdc;
+}
+
+.layout__card.estilo-activo .header {
+    background-color: #1B62CA;
+}
+
+.layout__card.estilo-activo .card__btn-change {
+    background-color: #fff;
+    color: #0C60DC;
+    border: 2px solid #fff;
 }

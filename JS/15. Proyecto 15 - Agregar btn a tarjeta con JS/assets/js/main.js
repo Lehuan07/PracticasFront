@@ -29,12 +29,6 @@ let cambiarEstilos = document.querySelectorAll(".card__btn-change");
 cambiarEstilos.forEach(boton => {
     boton.addEventListener("click", () => {
         const tarjeta = boton.closest(".layout__card");
-        const header = tarjeta.querySelector(".header");
-
-        // Cambiar clase general
-        tarjeta.classList.toggle("cambiar--estilos");
-
-        // Cambiar color de fondo del header
-        header.style.backgroundColor = "#1B62CA";
+        tarjeta.classList.toggle("estilo-activo");
     });
 });
