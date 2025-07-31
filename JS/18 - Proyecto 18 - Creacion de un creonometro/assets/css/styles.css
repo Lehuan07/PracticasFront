@@ -43,6 +43,10 @@ body{
     font-weight: 600;
 }
 
+.contador__minutos{
+    width: 26rem;
+}
+
 
 .article__btn {
     display: flex;
