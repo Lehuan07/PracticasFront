@@ -9,25 +9,19 @@
 </head>
 <body>
     <div class="layout">
+
         <form action="" id="formulario" class="form">
             <label for="titulo" class="label">Titulo</label>
             <input type="text" name="titulo" id="inputTitulo" class="input">
-            <label for="subtitulo" class="label">Titulo</label>
+            <label for="subtitulo" class="label">Subtitulo</label>
             <input type="text" name="subtitulo" id="inputSubtitulo" class="input">
             <label for="Descripcion" class="label">Descripcion</label>
             <textarea name="Descripcion" id="textarea" class="textArea"></textarea>
             <button type="submit" class="boton" id="btnCrear">Crear Articulo</button>
         </form>
-            <div class="disapier">
-                <div class="header">
-            <h2 class="card__subtitle" id="cardSubtitle"></h2>
-            </div>
-            <h1 class="card__title" id="cardTitle"></h1>
-            <p class="card__text" id="cardText"></p>
-            <div class="botones">
-            <button class="card__btn-change">Ver más</button>
-            </div>
-        </div>
+
+
+        <div id="contenedorTarjetas" class="layout__tarjetas"></div>
     </div>
     
 </body>
