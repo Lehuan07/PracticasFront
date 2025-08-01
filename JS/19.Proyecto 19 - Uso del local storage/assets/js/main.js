@@ -12,6 +12,7 @@ let contenedorTarjetas = document.querySelector("#contenedorTarjetas");
 // Recuperar si ya hay artículos guardados
 let articulos = JSON.parse(localStorage.getItem("articulos")) || [];
 
+
 btn.addEventListener("click", function(event){
     //Evitamos la recarga del http
     event.preventDefault();
