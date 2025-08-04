@@ -19,4 +19,17 @@ input.addEventListener("keydown", ()=>{
 
 function validate(){
     let email = input.value
+    let pattern =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(email.trim() != ""){
+        let test = pattern.test(email);
+
+        if(test){
+            check.classList.add("show")
+            xmark.classList.remove("show")
+        }else{
+            check.classList.remove("show")
+            xmark.classList.add("show")
+        }
+    }
 }

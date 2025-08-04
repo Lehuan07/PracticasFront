@@ -71,3 +71,7 @@ html, body{
 .focus{
     border-color: #000;
 }
+
+.main__icons > .show{
+    opacity: 1;
+}
