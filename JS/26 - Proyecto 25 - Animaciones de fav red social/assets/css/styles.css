@@ -35,13 +35,13 @@ html, body{
     cursor: pointer;
 }
 
-.fav:hover{
-    transform: scale(1.1);
-}
-
 .fav{
     font-size: 20rem;
     transition: .3s all ease-in-out;
     cursor: pointer;
     filter: grayscale(0);
+}
+
+.fav:hover{
+transform: scale(1.1);
 }
