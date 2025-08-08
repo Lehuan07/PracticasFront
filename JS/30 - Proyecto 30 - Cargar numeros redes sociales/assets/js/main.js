@@ -1,9 +1,9 @@
 
 
-function animateCount(element, target, speed = 100) {
+function animateCount(element, target, speed = 10) {
     let count = 0;
 
-    const step = target / 100; // Aumenta de a pasos razonables
+    const step = Math.ceil(target / 100); // Aumenta de a pasos razonables
     const interval = setInterval(() => {
         count += step;
 
