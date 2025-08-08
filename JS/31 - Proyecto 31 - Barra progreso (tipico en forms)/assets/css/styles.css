@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #E8EFFA;
+}
+
+.layout{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout__main{
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.main__steps{
+    position: relative;
+    margin-right: 4rem;
+}
+
+.steps__progres,
+.steps__bar{
+    position: absolute;
+    margin-left: 1.25rem;
+    width: 0.5rem;
+    transition: all .3s ease-in-out;
+}
+
+
+.steps__progres{
+    height: 100%;
+    background-color: #CBD0CC;
+}
+
+.steps__bar{
+    height: 0;
+    background-color: #03978A;
+}
+
+.steps__circle{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.steps__step{
+    background-color: #fff;
+    border-radius: 5rem;
+    border: 3px solid #CBD0CC;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: all .3s linear;
+    color: #ccc;
+}
+
+.steps__step > .fa-solid{
+    opacity: 0;
+    transform: all .3s linear;
+}
+
+.active{
+    border: 3px solid #03978A;
+}
+
+.active > .fa-solid{
+    opacity: 1;
+    color: #748591;
+}
