@@ -41,7 +41,9 @@ body{
 .steps__progres,
 .steps__bar{
     position: absolute;
-    margin-left: 1.25rem;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
     width: 0.5rem;
     transition: all .3s ease-in-out;
 }
@@ -87,9 +89,39 @@ body{
 
 .active{
     border: 3px solid #03978A;
+    transition: all .4s linear;
 }
 
 .active > .fa-solid{
     opacity: 1;
     color: #748591;
+    transition: all .4s linear;
+}
+
+.main__btns{
+    display: flex;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.btn__prev, .btn__next{
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: #03978A;
+    padding: 1rem;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.disable{
+    background-color: #E0E0E0;
+    cursor: not-allowed;
 }
