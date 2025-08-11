@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Montserrat', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+}
+
+.layout{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F8FD;
+}
+
+.main__bank{
+    width: 70rem;
+    background-color: white;
+    padding: 5rem;
+}
+
+.bank__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 1.5rem;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0px 0px 10px #d3d3d3;
+    border-radius: 0.5rem;
+    margin-bottom: 4rem;
+    line-height: 1;
+}
+
+.header__number{
+    font-weight: 600;
+    color: #746F82;
+}
+
+.header__money{
+    font-size: 3.5rem;
+}
+
+.list__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-top: 1px solid #746F82;
+}
+
+.item__left{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item__countainer{
+    width: 100%;
+}
+
+.item__ico{
+    min-width: 3rem;
+    min-height: 3rem;
+    border: 1px solid #746F82;
+    text-align: center;
+    border-radius: 1.5rem;
+    padding: 0.2rem;
+    color: #746F82;
+    margin-right: 1rem;
+}
+
+.item__title{
+    color: #1F0509;
+}
+
+.item__text{
+    color: #746F82;
+    font-size: 1.2rem
+}
+
+.item__rigth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 15%;
+}
+
+.item__bill{
+    color: #D05D5E;
+}
+
+.item__total{
+    color: #746F82;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.bg__load{
+    background-image: linear-gradient(to right,
+    #7B75ED 0%,
+    #928DE7 10%,
+    #918CEA 20%,
+    #918CE1 30%,
+    #908BE9 100%
+    );
+
+    background-size: 200% 100%;
+    animation: load .9s linear infinite;
+}
+
+@keyframes load {
+    0%{
+        background-position: 50% 0;
+    }
+
+    100%{
+        background-position: -150% 0;
+    }
+}
+
+.bg__text{
+    border-radius: 5rem;
+    display: inline-block;
+    height: 1rem;
+    width: 100%;
+}
+
+.bank__header .bg__text{
+    width: 30%;
+    height: 3rem;
+}
+
+.item__total .bg__load{
+    margin: 0;
+}
+
+.list__item .bg__text{
+    height: 1.4rem;
+}
