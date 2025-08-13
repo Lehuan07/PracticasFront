@@ -4,6 +4,7 @@ let main = document.querySelector(".layout__main");
 let messages = document.querySelector(".main__messages");
 let form = document.querySelector(".main__form");
 let input = document.querySelector(".form__input");
+let loader = document.querySelector(".layout__loader")
 
 
 
@@ -21,5 +22,10 @@ let sendMessage = (e) =>{
         input.value = "";
     }
 }
+
+setTimeout(()=>{
+    loader.style.display = "none"
+    main.style.display = "flex"; 
+},5000)
 
 form.addEventListener("submit", sendMessage);

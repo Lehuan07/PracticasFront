@@ -21,7 +21,7 @@ body{
 }
 
 .layout__main{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     height: 60rem;
@@ -85,4 +85,36 @@ body{
 
 .form__btn:hover{
     background-color: #14456e;
+}
+
+
+.layout__loader{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    height: 8rem;
+    width: 8rem;
+    clip: rect(0, 8rem, 8rem, 4rem);
+    animation: loader 1.5s linear infinite;
+}
+
+@keyframes loader {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.loader__circle{
+    position: relative;
+    display: inline-block;
+    height: 8rem;
+    width: 8rem;
+    border: 5px solid #46518C;
+    
+    border-radius: 10rem;
 }
