@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Montserrat', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+}
+
+.layout{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F8FD;
+}
+
+.layout__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60rem;
+    width: 60rem;
+    border-radius: 1rem;
+}
+
+.main__button{
+    width: 12rem;
+    height: 3rem;
+    margin-bottom: 3rem;
+    outline: none;
+    border: none;
+    background-color: #ED4F4F;
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.main__button:hover{
+    background-color: #4fed6c;
+    color: #222;
+}
+
+
+.main__card{
+    width: 30rem;
+    height: 30rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    background-color: #DFDFDF;
+}
+
+.card__head{
+    width: 100%;
+    height: 2rem;
+    background-color: #ED4F4F;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+.head__title{
+    font-size: 1rem;
+}
+
+.fa-trash-can{
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.fa-trash-can:hover{
+    color: #f7cccc;
+}
+
+.card__body{
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.body__text{
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
