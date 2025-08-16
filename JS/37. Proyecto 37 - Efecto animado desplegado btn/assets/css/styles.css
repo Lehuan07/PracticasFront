@@ -67,26 +67,32 @@ body{
 
 .list__open > .li__item:nth-child(1){
     transform: translate(-14rem, 8rem);
+    transition-delay: 50ms;
 }
 
 .list__open > .li__item:nth-child(2){
     transform: translate(14rem, -8rem);
+    transition-delay: 400ms;
 }
 
 .list__open > .li__item:nth-child(3){
     transform: translate(14rem, 8rem);
+    transition-delay: 500ms;
 }
 
 .list__open > .li__item:nth-child(4){
     transform: translate(-14rem, -8rem);
+    transition-delay: 200ms;
 }
 
 .list__open > .li__item:nth-child(5){
     transform: translate(0, 16rem);
+    transition-delay: 600ms;
 }
 
 .list__open > .li__item:nth-child(6){
     transform: translate(0, -16rem);
+    transition-delay: 300ms;
 }
 
 .nav__btn{
