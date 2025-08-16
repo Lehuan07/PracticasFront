@@ -14,7 +14,6 @@ body{
     height: 100%;
     position: absolute;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #F7F8FD;
@@ -24,15 +23,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    height: 60rem;
-    width: 60rem;
+    height: 100vh;
+    width: 100%;
     border-radius: 1rem;
+    margin-top: 4rem;
 }
 
 .main__button{
-    width: 12rem;
-    height: 3rem;
+    min-width: 12rem;
+    min-height: 3rem;
     margin-bottom: 3rem;
     outline: none;
     border: none;
@@ -50,10 +49,19 @@ body{
     color: #222;
 }
 
+.notes__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1rem;
+    gap: 2rem
+}
 
 .main__card{
     width: 30rem;
     height: 30rem;
+    margin: 1rem;
     background-color: #FFFFFF;
     border-radius: 0.5rem;
     background-color: #DFDFDF;
@@ -65,6 +73,7 @@ body{
     background-color: #ED4F4F;
     border-radius: 0.5rem 0.5rem 0 0;
     padding: 0 1rem;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -74,6 +83,9 @@ body{
 
 .head__title{
     font-size: 1rem;
+    background-color: #ED4F4F;
+    border: none;
+    outline: none;
 }
 
 .fa-trash-can{
@@ -86,14 +98,16 @@ body{
     color: #f7cccc;
 }
 
-.card__body{
-    height: 100%;
-    width: 100%;
-    padding: 1rem;
-}
 
 .body__text{
+    min-width: 100%;
+    min-height: 100%;
+    padding: 1rem;
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.2;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: #DFDFDF;
 }
