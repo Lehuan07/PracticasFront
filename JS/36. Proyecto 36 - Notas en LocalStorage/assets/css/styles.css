@@ -55,8 +55,10 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     border: 1rem;
-    gap: 2rem
+    gap: 2rem;
+
 }
+
 
 .main__card{
     width: 30rem;
@@ -65,7 +67,22 @@ body{
     background-color: #FFFFFF;
     border-radius: 0.5rem;
     background-color: #DFDFDF;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 300ms ease-in-out;
 }
+
+.note--visible{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.note--visible-no-transition{
+    opacity: 1;
+    transform: scale(1);
+    transition: none;
+}
+
 
 .card__head{
     width: 100%;

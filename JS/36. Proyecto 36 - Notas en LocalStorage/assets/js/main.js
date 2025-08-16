@@ -1,4 +1,5 @@
 window.addEventListener("load", (event) =>{
+
     let btn = document.querySelector(".main__button")
     let notes = document.querySelector(".notes__container")
 
@@ -6,12 +7,12 @@ window.addEventListener("load", (event) =>{
         e.preventDefault();
 
         //Agregamos notas al contenedor
-        createNote("", "");
+        createNote("", "", true);
     });
 
     getNotes();
 
-    function createNote(body = "", title = ""){
+    function createNote(body = "", title = "", transition = true){
 
         //Creo el html de la nota
         let note = document.createElement("article");
@@ -42,12 +43,26 @@ window.addEventListener("load", (event) =>{
 
         //Eliminar notas de la lista
         trash.addEventListener("click", () =>{
-            note.remove();
-            update()
+            note.classList.remove("note--visible-no-transition")
+            note.classList.remove("note--visible");
+            
+            setTimeout(() =>{                
+                note.remove();
+                update()
+            }, 310)
         })
 
         //Agrego nota al contenedor de notas
         notes.appendChild(note);
+            
+        // Forzar reflow y aplicar animación
+        if(transition){
+            setTimeout(() => {
+            note.classList.add("note--visible");
+        }, 10);
+        }else{
+            note.classList.add("note--visible-no-transition")
+        }
     }
 
     function update(){
@@ -78,7 +93,7 @@ window.addEventListener("load", (event) =>{
         let notesStorage = JSON.parse(localStorage.getItem("notes"));
         if(notesStorage){
             notesStorage.forEach(note =>{
-                createNote(note.body, note.title);
+                createNote(note.body, note.title, false);
             })
         }
     }
