@@ -60,32 +60,32 @@ body{
     transition: all 300ms linear;
 }
 
-.li__item:hover{
+.list__open > .li__item:hover{
     background-color: #03A9F4;
     color: #fff;
 }
 
-.li__item:nth-child(1){
+.list__open > .li__item:nth-child(1){
     transform: translate(-14rem, 8rem);
 }
 
-.li__item:nth-child(2){
+.list__open > .li__item:nth-child(2){
     transform: translate(14rem, -8rem);
 }
 
-.li__item:nth-child(3){
+.list__open > .li__item:nth-child(3){
     transform: translate(14rem, 8rem);
 }
 
-.li__item:nth-child(4){
+.list__open > .li__item:nth-child(4){
     transform: translate(-14rem, -8rem);
 }
 
-.li__item:nth-child(5){
+.list__open > .li__item:nth-child(5){
     transform: translate(0, 16rem);
 }
 
-.li__item:nth-child(6){
+.list__open > .li__item:nth-child(6){
     transform: translate(0, -16rem);
 }
 
@@ -103,12 +103,21 @@ body{
     color: #03A9F4;
     cursor: pointer;
     font-size: 3rem;
+    transition: all .3s linear;
 }
 
-.btn__ico-plus,.btn__ico-close{
-    display: none;
+.nav__btn:hover{
+    background-color: #03A9F4;
+    color: #fff;
+}
+
+.hidden {
+    display: none !important;
+    transition: all .3s linear;
 }
 
 .btn__show{
-    display: inline;
+    display: inline-block;
+    transition: all .3s linear;
 }
+
