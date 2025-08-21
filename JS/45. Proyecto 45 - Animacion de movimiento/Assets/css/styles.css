@@ -7,122 +7,116 @@ html{
 body{
     font-size: 1.6rem;
     font-family: "Montserrat", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
 }
 
 
 
 .layout{
     width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 100vh;
+    position: relative;
     overflow: hidden;
-}
-
-.layout__main{
     display: flex;
     flex-direction: row;
-    position: relative;
-    transition: transform 500ms ease-in-out;
 }
 
-.main__section{
+.layout__left{
     width: 75%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
     transition: transform 500ms ease-in-out;
 }
 
-.main__btns{
-    height: 4rem;
-    width: 6rem;
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    left: 73.6%;
-    top: 50%; 
-    z-index: 1;
-}
-
-.section__img{
-    height: 100vh;
+.left__bg{
     width: 100%;
-    flex-shrink: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-.btn__down, .btn__up{
-    border: none;
-    outline: none;
-    width: 2rem;
-    height: 3rem;
-    cursor: pointer;
-    z-index: 10;
+.left__bg--1{
+    background-image: url("../img/coche.jpg");
+    width: 100%;
+    height: 100%;
 }
-.btn__up{
-    border-radius: 0.5rem 0 0 0.5rem;
+.left__bg--2{
+    background-image: url("../img/coche2.jpg");
+}
+.left__bg--3{
+    background-image: url("../img/coche3.jpg");
+}
+.left__bg--4{
+    background-image: url("../img/coche4.jpg");
 }
 
 .btn__down{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25%;
+    margin: auto 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+    cursor: pointer;
+}
+
+.btn__up{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translateY(-50%);
+    margin: auto 0;
+    padding: 1rem;
+    border: none;
     border-radius: 0 0.5rem 0.5rem 0;
-    border-left: 1px solid #222;
+    cursor: pointer;
 }
 
-.main__description {
+.layout__rigth{
     width: 25%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    background-color: #CAD2F6;
-}
-
-.description__wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 400vh; /* 4 descripciones x 100vh */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
     transition: transform 500ms ease-in-out;
 }
 
-.description__coches {
-    height: 100vh;
-    width: 100%;
+.rigth__content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-
-.desc1{
-    background-color: rgb(214, 135, 135);
     width: 100%;
+    height: 100%;
 }
 
-.desc2{
-    background-color: rgb(176, 214, 135);
-    width: 100%;
+.rigth__content--1{
+    background-color: #CAD2F6;
+}
+.rigth__content--2{
+    background-color: #f6ceca;
+}
+.rigth__content--3{
+    background-color: #cbf6ca;
+}
+.rigth__content--4{
+    background-color: #f6caf0;
 }
 
-.desc3{
-    background-color: rgb(135, 152, 214);
-    width: 100%;
-}
-
-.desc4{
-    background-color: rgb(214, 135, 214);
-    width: 100%;
-}
-
-.coches__titulo{
-    width: 10rem;
-    height: 4rem;
+.rigth__title{
+    padding: 2rem;
     background-color: #323232;
-    text-align: center;
-    color: #fff;
-    padding: 0.5rem;
     border-radius: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-size: 3rem;
 }
 
-.coche__description{
-    font-size: 1.3rem;
+.rigth__description{
+    font-weight: 600;
 }

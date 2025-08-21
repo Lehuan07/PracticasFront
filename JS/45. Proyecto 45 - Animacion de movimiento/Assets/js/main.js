@@ -1,41 +1,34 @@
+let layout = document.querySelector(".layout");
+let upbtn = document.querySelector(".btn__up");
+let downbtn = document.querySelector(".btn__down");
+let left = document.querySelector(".layout__left");
+let right = document.querySelector(".layout__right");
 
-    let btnUp = document.querySelector(".btn__up");
-    let btnDown = document.querySelector(".btn__down")
-    let layout = document.querySelector(".layout")
-    let left = document.querySelector(".main__section")
-    let rigth = document.querySelector(".main__description")
-    let rigthWrapper = document.querySelector(".description__wrapper");
-    let sliderLength = document.querySelectorAll(".section__img").length;
-    let count = 0;
+let sliderLength = document.querySelectorAll(".left__bg").length;
+let sliderIndex = 0;
 
-
-    let actions = (action) =>{
-
-        if(action == "up"){
-            count++;
-            if(count > sliderLength - 1){
-                count = 0;
-            }
-
-        }else if(action =="down"){
-            count--;
-            if(count < 0){
-                count = sliderLength - 1;
-            }
-
+let actions = (action) => {
+    if(action === "up"){
+        sliderIndex++;
+        if(sliderIndex > sliderLength - 1){
+            sliderIndex = 0;
         }
-
-        let windowHeight = layout.clientHeight;
-
-        left.style.transform = `translateY(-${count * windowHeight}px)`;
-        rigthWrapper.style.transform = `translateY(-${(sliderLength - 1 - count) * windowHeight}px)`;
-
+    } else if(action === "down"){
+        sliderIndex--;
+        if(sliderIndex < 0){
+            sliderIndex = sliderLength - 1;
+        }
     }
 
-    btnUp.addEventListener("click", () =>{
-        actions("up");
-    })
+    let windowHeight = layout.clientHeight;
+    left.style.transform = `translateY(-${sliderIndex * windowHeight}px)`;
+    right.style.transform = `translateY(-${sliderIndex * windowHeight}px)`;
+}
 
-    btnDown.addEventListener("click", () =>{
-        actions("down");
-    })
+upbtn.addEventListener("click", () => {
+    actions("up");
+});
+
+downbtn.addEventListener("click", () => {
+    actions("down");
+});
