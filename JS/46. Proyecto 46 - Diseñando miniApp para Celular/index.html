@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recreacion de una app de celular en JS</title>
     <script src="https://kit.fontawesome.com/226c8304e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/JS/46. Proyecto 46 - Diseñando miniApp para Celular/assets/css/reset.css">
+    <link rel="stylesheet" href="/JS/46. Proyecto 46 - Diseñando miniApp para Celular/assets/css/styles.css">
 </head>
 <body>
     <div class="layout">
         <section class="layout__section">
-            <article class="article__home">
+            <article class="article__home active">
                 <h1 class="article__title">HOME</h1>
                 <div class="home__content">
                     <h2 class="content__title">Bienvenidos a la APP de Espacio Estrategico</h2>
@@ -22,8 +24,11 @@
                     <a href="https://www.youtube.com/@EspacioEstrategico" target="_blank" class="countainer__ancor">
                         <i class="a__ico fa-brands fa-youtube"></i>
                     </a>
-                        <a href="https://www.linkedin.com/in/nahuelncejas/" target="_blank" class="countainer__ancor">
+                        <a href="https://www.instagram.com/estrategicoespacio/" target="_blank" class="countainer__ancor">
                             <i class="a__ico fa-brands fa-instagram"></i>                    
+                    </a>
+                    <a href="https://www.linkedin.com/in/nahuelncejas/" target="_blank" class="countainer__ancor">
+                        <i class="a__ico fa-brands fa-linkedin"></i>
                     </a>
                     <a href="https://x.com/EspacioEstratg1/" target="_blank" class="countainer__ancor">
                             <i class="a__ico fa-brands fa-x-twitter"></i>                  
@@ -33,7 +38,53 @@
                     </a>
                 </div>
             </article>
+            <article class="article__acerca">
+                <h1 class="article__title">Acerca de</h1>
+                <div class="acerca__description">
+                    <p class="description__parrafo">En espacio estrategico hay mas de 250 videos, todos hablando sobre juegos de estrategia</p>
+                    <a href="https://www.youtube.com/@EspacioEstrategico" target="_blank" rel="noopener noreferrer" class="content__link">Ver todos los videos</a>
+                </div>
+            </article>
+            <article class="article__web">
+                <h1 class="article__title">Web</h1>
+                <iframe src="https://www.thestrategyinformer.com/" frameborder="0" class="web__iframe">
+                    width="600" 
+                    height="400"                    
+                </iframe>
+            </article>
+
+            <article class="article__contact">
+                <h1 class="article__title">Contacto</h1>
+                <form action="">
+                    <input type="text" placeholder="Ingrese su nombre" class="contact__input">
+                    <input type="email" placeholder="Ingrese su e-mail" class="contact__input">
+                    <textarea name="" class="contact__text" id="" placeholder="Lo leemos"></textarea>
+                    <button>Enviar</button>
+                </form>
+            </article>
         </section>
+        <nav class="layout__nav">
+                <button class="countainer__ico active">
+                    <i class="ico__nav fa-solid fa-house"></i>
+                    <p class="ico__parrafo">Home</p>
+                </button>
+                <button class="countainer__ico">
+                    <i class="ico__nav fa-solid fa-share-nodes"></i>
+                    <p class="ico__parrafo">Redes</p>
+                </button>
+                <button class="countainer__ico">
+                    <i class="ico__nav fa-solid fa-question"></i>
+                    <p class="ico__parrafo">Acerca de</p>
+                </button>
+                <button class="countainer__ico">
+                    <i class="ico__nav fa-solid fa-globe"></i>
+                    <p class="ico__parrafo">Web</p>
+                </button>
+                <button class="countainer__ico">
+                    <i class="ico__nav fa-solid fa-address-book"></i>
+                    <p class="ico__parrafo">Contacto</p>
+                </button>
+        </nav>
     </div>
 </body>
 </html>
