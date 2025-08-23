@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 21 - Aplicacion para correos temporales</title>
+    <link rel="stylesheet" href="/HTML Y CSS SIN JS/21. Proyecto 21 - Aplicacion para correos temporales/css/grid.css">
+    <link rel="stylesheet" href="/HTML Y CSS SIN JS/21. Proyecto 21 - Aplicacion para correos temporales/css/styles.css">
+    <script src="https://kit.fontawesome.com/226c8304e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="grid">
+    <header class="grid__header">
+        <h1 class="titulo">Proyecto 21 - Aplicacion para correos temporales</h1>
+    </header>
+    <article class="grid__article">
+        <section class="class__main">
+            <h2 class="main__title">Correo temporal</h2>
+            <div class="main__gurupo__input_button">
+                <label class="main__input">nahuelosky_7@gmail.com</label>
+                <button><i class="fa-solid fa-copy"></i></button>
+            </div>
+            <div class="box__main">
+                <div class="main__longitud">
+                <label for="range">Longitud</label>
+                <span>4</span>
+            </div>
+            <div class="main__imputs">
+                <input type="range" name="range" id="range" class="range__main" min="0" max="30" value="4" >
+                <div class="checkbox-group">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        Con letras
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        Con numeros
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        Con simbolos
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        Con Mayusculas
+                    </label>
+                </div> 
+            </div>
+                <input type="email" class="main__input__black" placeholder="Personalizado">
+            <input type="submit" value="Crear" class="main__crear">
+        </div>
+        </section>
+    </article>
+    </div>
+</body>
+</html>
