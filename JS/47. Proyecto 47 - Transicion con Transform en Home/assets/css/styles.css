@@ -120,7 +120,6 @@ body{
     font-weight: 600;
     transition: all .3s ease;
     user-select: none;
-
 }
 
 .list__item:hover{
