@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/226c8304e7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/JS/46. Proyecto 46 - Diseñando miniApp para Celular/assets/css/reset.css">
     <link rel="stylesheet" href="/JS/46. Proyecto 46 - Diseñando miniApp para Celular/assets/css/styles.css">
+    <script src="/JS/46. Proyecto 46 - Diseñando miniApp para Celular/assets/js/main.js" defer></script>
 </head>
 <body>
     <div class="layout">
@@ -19,7 +20,7 @@
                     <a href="https://www.youtube.com/@EspacioEstrategico" target="_blank" rel="noopener noreferrer" class="content__link">Ir a Espacio Estrategico</a>
                 </div>
             </article>
-            <article class="article__redes inactive">
+            <article class="article__redes">
                 <h1 class="article__title">Redes</h1>
                 <div class="redes__countainer">
                     <a href="https://www.youtube.com/@EspacioEstrategico" target="_blank" class="countainer__ancor">
@@ -39,21 +40,21 @@
                     </a>
                 </div>
             </article>
-            <article class="article__acerca inactive">
+            <article class="article__acerca">
                 <h1 class="article__title">Acerca de</h1>
                 <div class="acerca__description">
                     <p class="description__parrafo">En espacio estrategico hay mas de 250 videos, todos hablando sobre juegos de estrategia</p>
                     <a href="https://www.youtube.com/@EspacioEstrategico" target="_blank" rel="noopener noreferrer" class="content__link acerca-de">Ver todos los videos</a>
                 </div>
             </article>
-            <article class="article__web inactive">
+            <article class="article__web">
                 <h1 class="article__title">Web</h1>
                 <iframe src="https://www.thestrategyinformer.com/" frameborder="0" class="web__iframe">
                                         
                 </iframe>
             </article>
 
-            <article class="article__contact inactive">
+            <article class="article__contact">
                 <h1 class="article__title">Contacto</h1>
                 <iframe src="https://www.contactus.com.ar/" frameborder="0" class="web__iframe">
                                         
@@ -63,23 +64,23 @@
         </section>
         <nav class="layout__nav">
 
-                <button class="countainer__ico icoactive">
+                <button data-index="0" class="countainer__ico icoactive">
                     <i class="ico__nav fa-solid fa-house"></i>
                     <p class="ico__parrafo">Home</p>
                 </button>
-                <button class="countainer__ico">
+                <button data-index="1" class="countainer__ico">
                     <i class="ico__nav fa-solid fa-share-nodes"></i>
                     <p class="ico__parrafo">Redes</p>
                 </button>
-                <button class="countainer__ico">
+                <button data-index="2" class="countainer__ico">
                     <i class="ico__nav fa-solid fa-question"></i>
                     <p class="ico__parrafo">Acerca</p>
                 </button>
-                <button class="countainer__ico">
+                <button data-index="3" class="countainer__ico">
                     <i class="ico__nav fa-solid fa-globe"></i>
                     <p class="ico__parrafo">Web</p>
                 </button>
-                <button class="countainer__ico">
+                <button data-index="4" class="countainer__ico">
                     <i class="ico__nav fa-solid fa-address-book"></i>
                     <p class="ico__parrafo">Contacto</p>
                 </button>

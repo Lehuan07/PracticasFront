@@ -25,7 +25,7 @@ body{
     align-items: center;
 
     background-color: #ECECEC;
-    border-radius: 6rem;
+    border-radius: 6rem 6rem 0 0;
     
 }
 
@@ -40,10 +40,7 @@ body{
     width: 100%;
     height: 100%;
     padding: 2rem;
-}
-
-.article__home{
-    transition: all 300ms linear;
+    position: relative;
 }
 
 .article__title{
@@ -77,12 +74,10 @@ body{
     font-weight: 600;
 }
 
-.article__title{
-    transition: all 300ms linear;
-}
+
 
 .redes__countainer{
-    width: 100%;
+    width: 90%;
     height: 5rem;
     display: flex;
     flex-direction: row;
@@ -104,7 +99,7 @@ body{
 
 .acerca__description{
     height: 20rem;
-    width: 90%;
+    width: 80%;
     background-color: #B1DFF0;
     padding: 2rem;
     display: flex;
@@ -128,7 +123,7 @@ body{
 }
 
 .web__iframe{
-    width: 100%;
+    width: 90%;
     height:40rem;
 }
 .layout__nav{
@@ -165,8 +160,19 @@ body{
 .icoactive{
     background-color: #494949;
 }
-.inactive{
+
+article {
+    transform: scale(0);
     opacity: 0;
     visibility: hidden;
-    transition: opacity .3s ease;
+    transition: all .3s ease;
+    position: absolute; /* para que se superpongan */
+    width: 100%;
+    height: 100%;
+}
+
+article.active {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
 }
