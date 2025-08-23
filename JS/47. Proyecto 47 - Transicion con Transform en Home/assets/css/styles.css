@@ -15,6 +15,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: #F1D4D6;
+    perspective: 100rem;
 }
 
 .layout__nav{
@@ -29,7 +30,7 @@ body{
 .nav__btn{
     position: relative;
     height: 5rem;
-    height: 5rem;
+    width: 5rem;
     cursor: pointer;
 }
 
@@ -44,14 +45,14 @@ body{
 
 .btn__close{
     opacity: 0;
-    color: #000;
+    color: #fff;
 }
 
 .layout__pages{
     position: relative;
     width: 100%;
     height: 100%;
-    transition: all .1s ease;
+    transition: all .5s ease;
 }
 
 .pages__page{
@@ -91,4 +92,47 @@ body{
     padding: 2rem;
     border-radius: 1rem;
     background-color: #212025;
+}
+
+.layout__pages--show{
+    width: 80%;
+    transform: scale(0.5) rotateZ(3deg) rotateX(10deg) rotateY(-18deg);
+}
+
+.layout__list{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: all .4s ease-out;
+}
+
+.layout__list--show{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.list__item{
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all .3s ease;
+    user-select: none;
+
+}
+
+.list__item:hover{
+    opacity: 0.8;
+    color: #ff7b7b;
+    transform: translateX(-2rem);
+}
+
+.nav__btn--active > .btn__open{
+    opacity: 0;
+}
+
+.nav__btn--active > .btn__close{
+    opacity: 1;
 }
