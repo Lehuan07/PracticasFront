@@ -65,7 +65,7 @@ html{
     font-size: 2em;
     background: #ffffff;
     padding-top: 1em;
-    border-radius: 1rem;
+    border-radius: 1rem 0 0 1rem;
 }
 
 .main__generate button {
@@ -216,6 +216,10 @@ input[type="range"]::-moz-range-thumb {
 .main__crear:hover{
     background-color: #0766da;
 
+}
+
+.copied{
+    background-color: #5f5;
 }
 
 @media screen and (max-width: 464px){

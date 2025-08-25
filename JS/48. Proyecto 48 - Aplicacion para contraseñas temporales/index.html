@@ -19,34 +19,34 @@
         <section class="class__main">
             <h2 class="main__title">General contraseña</h2>
             <div class="main__generate">
-                <label class="generate__emain">f1234d</label>
-                <button><i class="fa-solid fa-copy"></i></button>
+                <label class="generate__emain"></label>
+                <button id="coppy"><i class="fa-solid fa-copy"></i></button>
             </div>
-            <div class="main__form">
+            <form class="main__form">
                 <div class="main__longitud">
                 <label for="range">Longitud</label>
-                <span>4</span>
+                <span class="control__number">5</span>
             </div>
             <div class="main__imputs">
                 <input type="range" name="range" id="range" class="range__main" min="5" max="15" value="5" >
                 <div class="checkbox-group">
                     <label class="custom-checkbox">
-                        <input type="checkbox" />
+                        <input type="checkbox" id="letters"/>
                         <span class="checkmark"></span>
                         Con letras en minusculas
                     </label>
                     <label class="custom-checkbox">
-                        <input type="checkbox" />
+                        <input type="checkbox" id="upper"/>
                         <span class="checkmark"></span>
                         Con letras en mayusculas
                     </label>
                     <label class="custom-checkbox">
-                        <input type="checkbox" />
+                        <input type="checkbox" id="numbers"/>
                         <span class="checkmark"></span>
                         Con numeros
                     </label>
                     <label class="custom-checkbox">
-                        <input type="checkbox" />
+                        <input type="checkbox" id="simbols"/>
                         <span class="checkmark"></span>
                         Con simbolos
                     </label>
@@ -54,7 +54,7 @@
                 </div> 
             </div>
             <input type="submit" value="Crear" class="main__crear">
-        </div>
+        </form>
         </section>
     </article>
     </div>
