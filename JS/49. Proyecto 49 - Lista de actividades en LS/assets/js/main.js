@@ -67,5 +67,12 @@ function mostrarTareas() {
 });
 }
 
+listarTareasDOM.addEventListener("click", (e)=>{
+    if (e.target.classList.contains("fa-trash")){
+        let eliminarTarea = e.target.parentElement;
+        eliminarTarea.remove();
+    }
+})
+
 // 🚀 Mostramos las tareas al cargar la página
 document.addEventListener("DOMContentLoaded", mostrarTareas);
