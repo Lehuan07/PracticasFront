@@ -20,14 +20,14 @@ function showProducts(){
         layoutProducts.innerHTML +=`
         <article class="products__product">
             <div class="product__container--img">
-            <img class="product__img" src="${product.img}"
+            <img class="product__img" src="${product.img}" alt="${product.title}">
             </div>
 
             <div class="product__title">
                 ${product.title}
             </div>
 
-            <div class="product__price>
+            <div class="product__price">
                 ${product.precio}
             </div>
 
