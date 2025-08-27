@@ -23,11 +23,12 @@ inputTarea.addEventListener("keydown", (e) => {
     }
 
     // 📦 Recuperamos tareas existentes desde Local Storage
-    let tareasExistentes = JSON.parse(localStorage.getItem("tarea")) || [];
+    let tareasExistentes = parsearTarea() || [];
 
     // 🆕 Creamos una nueva tarea como objeto
     let nuevaTarea = {
-        tarea: inputTarea.value
+        tarea: inputTarea.value,
+        completada: false
     };
 
     // ➕ Agregamos la nueva tarea al array existente
@@ -57,22 +58,38 @@ function mostrarTareas() {
 
     // 🧱 Estructura HTML de cada tarea
     contenedorTarea.innerHTML = `
-        <input type="checkbox" id="tarea-${index}" class="container__check">
-        <label for="tarea-${index}" class="container__goal">${tareaIndividual.tarea}</label>
-        <i class="fa-solid fa-trash"></i>
+        <input type="checkbox" id="tarea-${index}" class="container__check" ${tareaIndividual.completada ? "checked" : ""}>
+    <label for="tarea-${index}" class="container__goal">${tareaIndividual.tarea}</label>
+    <i class="fa-solid fa-trash"></i>
     `;
 
     // 📥 Insertamos la tarea en el DOM
     listarTareasDOM.appendChild(contenedorTarea);
+
+    // ✅ Evento para marcar como completada
+    let checkbox = contenedorTarea.querySelector("input");
+        checkbox.addEventListener("click", ()=>{
+            
+            tareasGuardadas[index].completada = checkbox.checked;
+            localStorage.setItem("tarea", JSON.stringify(tareasGuardadas));
+            mostrarTareas();
+        })
+
+    // 🗑 Evento para borrar
+    let trash = contenedorTarea.querySelector(".fa-trash");
+    trash.addEventListener("click", () =>{
+        tareasGuardadas.splice(index, 1);
+        localStorage.setItem("tarea", JSON.stringify(tareasGuardadas));
+        mostrarTareas();
+    })
+    
 });
 }
 
-listarTareasDOM.addEventListener("click", (e)=>{
-    if (e.target.classList.contains("fa-trash")){
-        let eliminarTarea = e.target.parentElement;
-        eliminarTarea.remove();
-    }
-})
+
+function parsearTarea(){
+    return JSON.parse(localStorage.getItem("tarea"))
+}
 
 // 🚀 Mostramos las tareas al cargar la página
 document.addEventListener("DOMContentLoaded", mostrarTareas);

@@ -103,4 +103,6 @@ body{
     margin-left: auto;
     color: var(--color-letras-iconos);
     font-size: 1.7rem;
+    cursor: pointer;
 }
+
