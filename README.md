@@ -27,11 +27,7 @@ Los proyectos incluyen funcionalidades como:
 ---
 
 ## 🚧 Progreso
-
-Actualmente se están subiendo los ejercicios uno por uno a medida que se completan.
-
-✅ Proyectos completados: **1 al 17**  
-🕗 Pendientes: **18 al 100+**
+✅ Curso finalizado – Proyectos completados: 1 al 100+
 
 ---
 
