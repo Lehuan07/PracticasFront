@@ -7,6 +7,7 @@ html{
 body{
     font-size: 1.6rem;
     font-family: 'Montserrat', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 .layout{
@@ -72,4 +73,101 @@ body{
     padding: 2rem;
     overflow-y: auto;
     transition: all 300ms linear;
+}
+
+.layout__cart--hide{
+    right: -38rem;
+}
+
+.cart__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.cart__ico{
+    cursor: pointer;
+}
+
+.cart__products{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cart__item{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.cart__container-img{
+    width: 38%;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.cart__content{
+    width: 35%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cart__btn-quantity{
+    background-color: transparent;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10rem;
+    padding: 1rem;
+}
+
+.btn-quantity__ico-minus, 
+.btn-quantity__ico-plus{
+    cursor: pointer;
+}
+
+.btn-quantity__number{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.cart__subtotal{
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.card__total{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.total__text{
+    font-weight: 500;
+}
+
+.total__price{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #296BE6;
+}
+
+.cart__btn{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #296BE6;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
 }
